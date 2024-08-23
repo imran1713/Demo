@@ -6,6 +6,7 @@ import TextInput from "../TextInput.jsx";
 import CheckBox from "../CheckBox.jsx";
 import Button from "../Button.jsx";
 import Info from "../Info.jsx";
+import { IoLockClosedOutline, IoMailOutline, IoPersonCircleOutline } from 'react-icons/io5';
 const Signup = () => {
     return (
         <>
@@ -18,22 +19,22 @@ const Signup = () => {
                     <TextInput
                         type="text"
                         placeholder="Enter Name"
-                        icon={'person'}
+                        icon={<IoPersonCircleOutline size={25} />}
                     />
                     <TextInput
                         type="text"
                         placeholder="Enter email"
-                        icon={'alternate_email'}
+                        icon={<IoMailOutline size={25} />}
                     />
                     <TextInput
                         type="password"
                         placeholder="Enter password"
-                        icon={'lock'}
+                        icon={<IoLockClosedOutline size={25} />}
                     />
                     <TextInput
                         type="password"
                         placeholder="Confirm password"
-                        icon={'lock_clock'}
+                        icon={<IoLockClosedOutline size={25} />}
                     />
                     <CheckBox
                         text={"I agree to the Term and Condition"}
