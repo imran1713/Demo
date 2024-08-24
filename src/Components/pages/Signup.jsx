@@ -6,13 +6,14 @@ import TextInput from "../TextInput.jsx";
 import CheckBox from "../CheckBox.jsx";
 import Button from "../Button.jsx";
 import Info from "../Info.jsx";
+import image from '../../assets/images/signup.svg';
 import { IoLockClosedOutline, IoMailOutline, IoPersonCircleOutline } from 'react-icons/io5';
 const Signup = () => {
     return (
         <>
             <h1>Create an account</h1>
             <div className="column">
-                <Illustration/>
+                <Illustration image={image} text={'Signup'} />
                 <Form
                     className={`${classes.signup}`}
                 >
@@ -39,12 +40,12 @@ const Signup = () => {
                     <CheckBox
                         text={"I agree to the Term and Condition"}
                     />
-                    <Button>Submit Now</Button>
-                    <Info href={'login.html'}>Login</Info>
+                    <Button>
+                        <span>Submit Now</span>
+                    </Button>
+                    <Info href={'login.html'} text={'Already have an account? '}>Login</Info>
                 </Form>
-
             </div>
-
         </>
     );
 };

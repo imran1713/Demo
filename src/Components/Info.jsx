@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Info = ({href, children}) => {
+const Info = ({href, text, children}) => {
     return (
         <div className="info">
-            Already have an account? <a href={href}>{children}</a> instead.
+            {text} <a href={href}>{children}</a> instead.
         </div>
     );
 };
