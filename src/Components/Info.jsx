@@ -1,9 +1,10 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
-const Info = ({href, text, children}) => {
+const Info = ({to, text, children}) => {
     return (
         <div className="info">
-            {text} <a href={href}>{children}</a> instead.
+            {text} <NavLink to={to}>{children}</NavLink> instead.
         </div>
     );
 };
