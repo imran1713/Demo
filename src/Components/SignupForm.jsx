@@ -38,10 +38,10 @@ const SignupForm = () => {
             await signup(email, password, username);
             navigate('/');
 
-        } catch (e) {
-            console.log(e);
+        } catch (err) {
+            console.log(err);
             setLoading(false);
-            setError(e + 'Failed to sign up.');
+            setError(err + 'Failed to sign up.');
         }
 
     }

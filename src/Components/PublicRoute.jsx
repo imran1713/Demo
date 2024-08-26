@@ -4,9 +4,12 @@ import {Navigate} from "react-router-dom";
 const PublicRoute = (Component) => {
     return props => {
         const {currentUser} = useAuth();
-        // console.log(currentUser);
+
+
         if(!currentUser){
+            // console.log(currentUser);
             return <Component {...props} />
+
         } else{
             return <Navigate to={'/'}/>
         }
