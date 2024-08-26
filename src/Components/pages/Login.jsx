@@ -1,8 +1,12 @@
 import React from 'react';
 import image from '../../assets/images/login.svg';
 import Illustration from "../Illustration.jsx";
-
 import LoginForm from "../LoginForm.jsx";
+
+
+
+import PublicRoute from "../PublicRoute.jsx";
+import PrivateRoute from "../PrivateRoute.jsx";
 
 const Login = () => {
     return (
@@ -16,4 +20,5 @@ const Login = () => {
     );
 };
 
+// export default PublicRoute (Login);
 export default Login;

@@ -8,10 +8,15 @@ import Result from "./pages/Result.jsx";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {AuthProvider} from "../Contexts/AuthContexts.jsx";
 import PrivateRoute from "./PrivateRoute.jsx";
+import PublicRoute from "./PublicRoute.jsx";
 
 function App() {
+    const PrivateQuiz = PrivateRoute(Quiz);
+    const PrivateResult = PrivateRoute(Result);
+    const PublicLogin = PublicRoute(Login);
+    const PublicSignup = PublicRoute(Signup);
 
-  return (
+    return (
     <div
         className={'App'}
     >
@@ -20,17 +25,10 @@ function App() {
                 <Layout>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/signup" element={<Signup />} />
-                        <Route path="/quiz" element={<Quiz />} />
-                        <Route path="/result" element={<Result />} />
-                        {/*<PrivateRoute path="/quiz" >*/}
-                        {/*    <Quiz/>*/}
-                        {/*</PrivateRoute>*/}
-                        {/*<PrivateRoute path="/result" >*/}
-                        {/*    <Result />*/}
-                        {/*</PrivateRoute>*/}
-
+                        <Route path="/login" element={<PublicLogin />} />
+                        <Route path="/signup" element={<PublicSignup />} />
+                        <Route path="/quiz" element={<PrivateQuiz />} />
+                        <Route path="/result" element={<PrivateResult />} />
                     </Routes>
                 </Layout>
 
@@ -38,7 +36,7 @@ function App() {
 
         </Router>
     </div>
-  );
+    );
 }
 
 export default App

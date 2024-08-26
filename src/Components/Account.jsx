@@ -7,7 +7,7 @@ import {useAuth} from "../Contexts/AuthContexts.jsx";
 
 const Account = () => {
     const {currentUser} = useAuth();
-    // const {displayName} = currentUser;
+
     console.log(currentUser);
     return (
         <div className={classes.account}>
