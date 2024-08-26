@@ -22,12 +22,15 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<Signup />} />
-                        <PrivateRoute path="/quiz" >
-                            <Quiz/>
-                        </PrivateRoute>
-                        <PrivateRoute path="/result" >
-                            <Result />
-                        </PrivateRoute>
+                        <Route path="/quiz" element={<Quiz />} />
+                        <Route path="/result" element={<Result />} />
+                        {/*<PrivateRoute path="/quiz" >*/}
+                        {/*    <Quiz/>*/}
+                        {/*</PrivateRoute>*/}
+                        {/*<PrivateRoute path="/result" >*/}
+                        {/*    <Result />*/}
+                        {/*</PrivateRoute>*/}
+
                     </Routes>
                 </Layout>
 
