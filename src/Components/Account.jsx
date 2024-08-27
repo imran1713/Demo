@@ -17,7 +17,7 @@ const Account = () => {
 
     const handleLogout = async (e) => {
         e.preventDefault();
-        console.log('logout pressed');
+        // console.log('logout pressed');
         try{
             setLoading(true);
             await logout();

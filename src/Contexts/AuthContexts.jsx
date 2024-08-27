@@ -18,8 +18,7 @@ const AuthProvider = ({children}) => {
     const [currentUser, setCurrentUser] = React.useState(null);
 
     useEffect(() => {
-        // console.log('requesting to server');
-        // console.log('requesting to server');
+
         const auth = getAuth();
         return onAuthStateChanged(auth, user => {
             setCurrentUser(auth.currentUser);
