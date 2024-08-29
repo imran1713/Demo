@@ -1,7 +1,7 @@
 import React, {useRef, useState} from 'react';
 import classes from '../styles/ProgressBar.module.css'
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
-import Button from "./Button.jsx";
+import Button from "./Common/Button.jsx";
 
 const ProgressBar = ({
                          next,

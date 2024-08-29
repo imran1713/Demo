@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import classes from '../styles/Answers.module.css'
-import CheckBox from "./CheckBox.jsx";
+import CheckBox from "./Common/CheckBox.jsx";
 const Answers = ({options = [], handleChange, input}) => {
     return (
         <div className={classes.answers}>

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import classes from '../styles/Account.module.css'
+import classes from '../../styles/Account.module.css'
 import { RiAccountCircleLine } from 'react-icons/ri';
 import {NavLink, useNavigate} from "react-router-dom";
 import {IoIosLogOut} from "react-icons/io";
-import {useAuth} from "../Contexts/AuthContexts.jsx";
+import {useAuth} from "../../Contexts/AuthContexts.jsx";
 import Button from "./Button.jsx";
 
 const Account = () => {

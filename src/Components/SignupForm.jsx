@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import classes from "../styles/Signup.module.css";
-import TextInput from "./TextInput.jsx";
+import TextInput from "./Common/TextInput.jsx";
 import {IoLockClosedOutline, IoMailOutline, IoPersonCircleOutline} from "react-icons/io5";
-import CheckBox from "./CheckBox.jsx";
-import Button from "./Button.jsx";
-import Info from "./Info.jsx";
-import Form from "./Form.jsx";
+import CheckBox from "./Common/CheckBox.jsx";
+import Button from "./Common/Button.jsx";
+import Info from "./Common/Info.jsx";
+import Form from "./Common/Form.jsx";
 import {useNavigate} from "react-router-dom";
 
 import { useAuth } from "../Contexts/AuthContexts.jsx";

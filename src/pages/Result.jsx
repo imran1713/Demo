@@ -1,8 +1,8 @@
 import React from 'react';
-import Summary from "../Summary.jsx";
-import Analysis from "../Analysis.jsx";
+import Summary from "../Components/Summary.jsx";
+import Analysis from "../Components/Analysis.jsx";
 import {useLocation, useParams} from "react-router-dom";
-import useAnswers from "../../Hooks/useAnswers.jsx";
+import useAnswers from "../Hooks/useAnswers.jsx";
 import _ from 'lodash';
 
 const Result = () => {

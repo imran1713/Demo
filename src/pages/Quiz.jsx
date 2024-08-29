@@ -1,12 +1,12 @@
 import React, {useEffect, useReducer, useState} from 'react';
-import Answers from "../Answers.jsx";
-import ProgressBar from "../ProgressBar.jsx";
-import MiniPlayer from "../MiniPlayer.jsx";
+import Answers from "../Components/Answers.jsx";
+import ProgressBar from "../Components/ProgressBar.jsx";
+import MiniPlayer from "../Components/MiniPlayer.jsx";
 import {useParams, useNavigate} from "react-router-dom";
-import useQuestions from "../../Hooks/useQuestions.jsx";
+import useQuestions from "../Hooks/useQuestions.jsx";
 
 import _ from 'lodash';
-import {useAuth} from "../../Contexts/AuthContexts.jsx";
+import {useAuth} from "../Contexts/AuthContexts.jsx";
 import {getDatabase, ref, set} from "firebase/database";
 
 const initialState = null;

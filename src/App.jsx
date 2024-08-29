@@ -1,14 +1,14 @@
-import '../styles/global.css';
-import Layout from "./Layout.jsx";
+import './styles/global.css';
+import Layout from "./Components/Common/Layout.jsx";
 import Home from "./pages/Home.jsx";
 import Signup from "./pages/Signup.jsx";
 import Login from "./pages/Login.jsx";
 import Quiz from "./pages/Quiz.jsx";
 import Result from "./pages/Result.jsx";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {AuthProvider} from "../Contexts/AuthContexts.jsx";
-import PrivateRoute from "./PrivateRoute.jsx";
-import PublicRoute from "./PublicRoute.jsx";
+import {AuthProvider} from "./Contexts/AuthContexts.jsx";
+import PrivateRoute from "./CustomRouting/PrivateRoute.jsx";
+import PublicRoute from "./CustomRouting/PublicRoute.jsx";
 
 function App() {
     const PrivateQuiz = PrivateRoute(Quiz);

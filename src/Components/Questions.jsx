@@ -4,17 +4,7 @@ import classes from '../styles/Question.module.css';
 import {IoMdHelpCircleOutline} from "react-icons/io";
 
 const Questions = ({answers=[]}) => {
-    /*
-    return (
-        <div className={classes.question}>
-            <div className={classes.qtitle}>
-                <IoMdHelpCircleOutline size={25}/>
-                Here goes the question from Learn with Sumit?
-            </div>
-            <Answers />
-        </div>
-    );
-     */
+
     return answers.map((answer, index) => {
         return <div
             className={classes.question}

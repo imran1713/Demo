@@ -1,7 +1,7 @@
 import React from 'react';
 import Account from "./Account.jsx";
-import classes from '../styles/Nav.module.css';
-import logo from '../assets/images/logo-bg.png';
+import classes from '../../styles/Nav.module.css';
+import logo from '../../assets/images/logo-bg.png';
 import {NavLink} from "react-router-dom";
 const Nav = () => {
     return (

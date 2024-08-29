@@ -1,12 +1,12 @@
 import React from 'react';
-import image from '../../assets/images/login.svg';
-import Illustration from "../Illustration.jsx";
-import LoginForm from "../LoginForm.jsx";
+import image from '../assets/images/login.svg';
+import Illustration from "../Components/Common/Illustration.jsx";
+import LoginForm from "../Components/LoginForm.jsx";
 
 
 
-import PublicRoute from "../PublicRoute.jsx";
-import PrivateRoute from "../PrivateRoute.jsx";
+import PublicRoute from "../CustomRouting/PublicRoute.jsx";
+import PrivateRoute from "../CustomRouting/PrivateRoute.jsx";
 
 const Login = () => {
     return (

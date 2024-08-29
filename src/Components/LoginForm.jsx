@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import classes from "../styles/Login.module.css";
-import TextInput from "./TextInput.jsx";
+import TextInput from "./Common/TextInput.jsx";
 import {IoLockClosedOutline, IoMailOutline} from "react-icons/io5";
-import Button from "./Button.jsx";
-import Info from "./Info.jsx";
-import Form from "./Form.jsx";
+import Button from "./Common/Button.jsx";
+import Info from "./Common/Info.jsx";
+import Form from "./Common/Form.jsx";
 import {useNavigate} from "react-router-dom";
 import {useAuth} from "../Contexts/AuthContexts.jsx";
 
